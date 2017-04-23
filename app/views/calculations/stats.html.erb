@@ -1,0 +1,49 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <table>
+      <tr>
+        <th>Part I Targets</th>
+        <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
+        <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
+      </tr>
+      <tr>
+        <th>Part II Targets</th>
+        <th><%= link_to "Square Form", "/square/new" %></th>
+        <th><%= link_to "Square Root Form", "/square_root/new" %></th>
+        <th><%= link_to "Payment Form", "/payment/new" %></th>
+        <th><%= link_to "Random Form", "/random/new" %></th>      </tr>
+      <tr>
+        <th>Part III Targets</th>
+        <th><%= link_to "Word Count Form", "/word_count/new" %></th>      </tr>
+        <th><%= link_to "Stats Form", "/stats/new" %></th>      </tr>
+      </tr>
+    </table>
+  </div>
+</nav>
+
+
+<h1> Stats Results </h1>
+<h2>Numbers</h2>
+</p><%= @numbers %></p>
+<h2>Count</h2>
+<p><%= @count %></p>
+<h2>Minimum</h2>
+<p><%= @minimum %></p>
+<h2>Maximum</h2>
+<p><%= @maximum %></p>
+<h2>Range</h2>
+<p><%= @range %></p>
+<h2>Median</h2>
+<p><%= @median %></p>
+<h2>Sum</h2>
+<p><%= @sum %></p>
+<h2>Mean</h2>
+<p><%= @mean %></p>
+<h2>Variance</h2>
+<p><%= @variance %></p>
+<h2>Standard Deviation</h2>
+<p><%= @standard_deviation %></p>
+<h2>Mode</h2>
+<p><%= @mode %></p>

@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <table>
+      <tr>
+        <th>Part I Targets</th>
+        <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
+        <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
+      </tr>
+      <tr>
+        <th>Part II Targets</th>
+        <th><%= link_to "Square Form", "/square/new" %></th>
+        <th><%= link_to "Square Root Form", "/square_root/new" %></th>
+        <th><%= link_to "Payment Form", "/payment/new" %></th>
+        <th><%= link_to "Random Form", "/random/new" %></th>      </tr>
+      <tr>
+        <th>Part III Targets</th>
+        <th><%= link_to "Word Count Form", "/word_count/new" %></th>      </tr>
+        <th><%= link_to "Stats Form", "/stats/new" %></th>      </tr>
+      </tr>
+    </table>
+  </div>
+</nav>
+
+
+<h1> Word Count Results </h1>
+<h2>Text</h2>
+</p><%= @text %></p>
+<h2>Word Count</h2>
+<p><%= @word_count %></p>
+<h2>Character Count (with spaces)</h2>
+<p><%= @character_count_with_spaces %></p>
+<h2>Character Count (without spaces)</h2>
+<p><%= @character_count_without_spaces %></p>
+<h2>Occurrences of <%= @special_word %></h2>
+<p><%= @occurrences %></p>
