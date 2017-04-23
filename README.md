@@ -93,7 +93,7 @@ The way it should work is:
     >
     > The square root of 8.0 is 2.83.
 
- - If I visit [http://localhost:3000/flexible/payment/410/30/250000](http://localhost:3000/flexible/payment/34/60/30000), I should see something like
+ - If I visit [http://localhost:3000/flexible/payment/410/30/250000](http://localhost:3000/flexible/payment/410/30/250000), I should see something like
 
     > ## Flexible Payment
     >
