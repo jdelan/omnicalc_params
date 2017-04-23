@@ -4,7 +4,7 @@
       <tr>
         <th>Part I Targets</th>
         <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
-        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/square_root/8" %></th>
         <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
         <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
       </tr>
@@ -26,10 +26,10 @@
 
 <h1> Payment Results </h1>
 <h2>APR</h2>
-</p><%= @user_apr %></p>
+</p><%= number_to_percentage(@user_apr) %></p>
 <h2>Number of years</h2>
-<p><%= @user_years %></p>
+<p><%= @user_years.round(0) %></p>
 <h2>Principal</h2>
-</p><%= @user_principal %></p>
+</p><%= number_to_currency(@user_principal) %></p>
 <h2>Payment</h2>
-<p><%= @payment %></p>
+<p><%= number_to_currency(@payment) %></p>

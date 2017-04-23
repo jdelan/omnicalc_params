@@ -4,7 +4,7 @@
       <tr>
         <th>Part I Targets</th>
         <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
-        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/square_root/8" %></th>
         <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
         <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
       </tr>
@@ -23,19 +23,18 @@
   </div>
 </nav>
 
-
 <h1> Word Count Calculation </h1>
 
 <form action="/word_count/results">
-  <div><label>
+  <div><label for="Text">
     Text
   </label>
-  <input type="Enter some text" name="user_text">
+  <input id="Text"type="Enter some text" name="user_text">
 </div>
-<div><label>
+<div><label for="special_word">
   Special word
 </label>
-<input type="Enter a particular word to count" name="user_word">
+<input id="special_word" type="Enter a particular word to count" name="user_word">
 </div>
 
 <button>

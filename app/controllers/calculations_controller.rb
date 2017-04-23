@@ -8,11 +8,11 @@ class CalculationsController < ApplicationController
     @the_number_sq = @the_number ** 2
     render("calculations/flexible_square.html.erb")
   end
-  def flexible_root
+  def flexible_square_root
     #params = {"num" => "6"}
     @the_number = params["num"].to_f
     @the_number_rt = Math.sqrt(@the_number)
-    render("calculations/flexible_root.html.erb")
+    render("calculations/flexible_square_root.html.erb")
   end
   def flexible_payment
     #params = {"num" => "6"}
@@ -58,8 +58,8 @@ class CalculationsController < ApplicationController
 
   def payment
     # params = {"user_number"=>"6"}
-    @user_apr = params[:user_apr].to_f.round(1)
-    @user_years = params[:user_years].to_f.round(1)
+    @user_apr = params[:user_apr].to_f.round(4)
+    @user_years = params[:user_years].to_f
     @user_principal = params[:user_principal].to_f
     @payment = (@user_principal * @user_apr / 1200) / ((1 - (1 + @user_apr /1200) ** (-1 * @user_years * 12)))
     render("calculations/payment.html.erb")

@@ -4,7 +4,7 @@
       <tr>
         <th>Part I Targets</th>
         <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
-        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/square_root/8" %></th>
         <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
         <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
       </tr>
@@ -26,4 +26,4 @@
 
 <h1> Flexible Payment</h1>
 
-<p> A <%= @years %> year loan of <%= number_to_currency(@loan) %>, with an annual interest rate of <%= @interest %>%, requires a monthly payment of <%= number_to_currency(@monthly_payment) %>.</p>
+<p> A <%= @years %> year loan of <%= number_to_currency(@loan) %>, with an annual interest rate of <%= number_to_percentage(@interest.round(2)) %>, requires a monthly payment of <%= number_to_currency(@monthly_payment) %>.</p>

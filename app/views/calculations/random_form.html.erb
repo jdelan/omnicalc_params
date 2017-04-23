@@ -4,7 +4,7 @@
       <tr>
         <th>Part I Targets</th>
         <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
-        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/square_root/8" %></th>
         <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
         <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
       </tr>
@@ -23,19 +23,18 @@
   </div>
 </nav>
 
-
 <h1> Random Calculation </h1>
 
 <form action="/random/results">
-  <div><label>
+  <div><label for="first">
     Minimum
   </label>
-  <input type="E.g. 1.5" name="user_first">
+  <input id="first" type="E.g. 1.5" name="user_first">
 </div>
-<div><label>
+<div><label for="last">
   Maximum
 </label>
-<input type="E.g. 4.5" name="user_last">
+<input id="last" type="E.g. 4.5" name="user_last">
 </div>
 
 <button>

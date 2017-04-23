@@ -4,7 +4,7 @@
       <tr>
         <th>Part I Targets</th>
         <th><%= link_to "Flexible Square Example", "/flexible/square/5" %></th>
-        <th><%= link_to "Flexible Square Root Example", "/flexible/root/8" %></th>
+        <th><%= link_to "Flexible Square Root Example", "/flexible/square_root/8" %></th>
         <th><%= link_to "Flexible Payment Example", "/flexible/payment/410/30/250000" %></th>
         <th><%= link_to "Flexible Random Example", "/flexible/random/50/100" %></th>
       </tr>
@@ -23,14 +23,13 @@
   </div>
 </nav>
 
-
 <h1> Square Root Form </h1>
 
 <form action="/square_root/results">
-  <div><label>
+  <div><label for="number">
     Enter a number
   </label>
-  <input type="text" name="user_number">
+  <input id="number" type="text" name="user_number">
 </div>
 <button>
   Calculate square root
